@@ -3,3 +3,5 @@
   display: table;
   clear: both;
 }
+The clearfix allows a container to wrap it's floated children. Without a clearfix or equivalent styling, a container does not wrap around
+its floated children and collapses, just as if its floated chldren were positioned absolutely.
