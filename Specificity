@@ -1,0 +1,8 @@
+* If the selectors are the same, then the last one will take precedence.
+**Calculating Specifity**
+p has a specificity of 1 (1 HTML selector)
+div p has a specificity of 2 (2 HTML selectors, 1+1)
+.tree has a specificity of 10 (1 class selector)
+div p.tree has a specificity of 12 (2 HTML selectors + a class selector, 1+1+10)
+#baobab has a specificity of 100 (1 id selector)
+body #content .alternative p has a specificity of 112 (HTML selector + id selector + class selector + HTML selector, 1+100+10+1)
