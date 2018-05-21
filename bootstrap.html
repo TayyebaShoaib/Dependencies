@@ -6,44 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <style>
-        .row
-        {
-            /* margin-top: 10px; */
-        }
         .row div
         {
             padding: 20px 10px;
             border: 1px solid silver;
         }
-        div:nth-of-type(1n)
+        div.column:nth-of-type(1n)
         {
             background-color: skyblue;
         }
-        div:nth-of-type(2n)
+        div.column:nth-of-type(2n)
         {
-            background-color: yellow;
+            background-color: pink;
         }
     </style>
   </head>
   <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">col-md-6</div>
-            <div class="col-md-6">col-md-6</div>
+        <div class="row mb-4">
+            <div class="column col-md-6">col-md-6</div>
+            <div class="column col-md-6">col-md-6</div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="column col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+            <div class="column col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+            <div class="column col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+            <div class="column col-md-6 col-lg-3">col-md-6 col-lg-3</div>
         </div>
 
         <div class="row">
-            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-            <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
-        </div>
-
-        <div class="row">
-            <div class="col-3">col-3</div>
-            <div class="col-3">col-3</div>
-            <div class="col-3">col-3</div>
-            <div class="col-3">col-3</div>
+            <div class="column col-3">col-3</div>
+            <div class="column col-3">col-3</div>
+            <div class="column col-3">col-3</div>
+            <div class="column col-3">col-3</div>
         </div>
     </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
